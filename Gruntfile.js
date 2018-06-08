@@ -30,7 +30,7 @@ module.exports = function(grunt) {
 					headers: {
 						'User-Agent': 'Ethereum.org-Gruntfile'
 					},
-					url: 'https://api.github.com/repos/ethereum/mist/releases'
+					url: 'https://api.github.com/repos/ethereum/mist/releases/latest'
 				},
 				dest: 'data/mist_releases.json'
 			}
@@ -44,7 +44,7 @@ module.exports = function(grunt) {
 			build: {
 				options: {
 					data: function(dest, src) {
-						var mistReleases = grunt.file.readJSON("data/mist_releases.json")[0]['assets'].filter(e => /Ethereum-Wallet/.test(e.name));
+						var mistReleases = grunt.file.readJSON("data/mist_releases.json")['assets'].filter(e => /Ethereum-Wallet/.test(e.name));
 						var mistReleaseOSX,
 							mistReleaseWin64,
 							mistReleaseWin32;

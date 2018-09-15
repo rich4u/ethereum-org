@@ -19,7 +19,12 @@
     "markdown": "latest",
     "markdown-it-include": "0.0.2",
     "pug": "^2.0.0-rc.4",
+<<<<<<< HEAD
     "serve-favicon": "^2.5.0"
+=======
+    "serve-favicon": "^2.2.0",
+    "simplecrawler": "^1.1.6"
+>>>>>>> master
   },
   "repository": {
     "type": "git",

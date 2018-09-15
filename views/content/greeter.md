@@ -74,8 +74,11 @@ You can get both of these by using a Solidity compiler. If you have not installe
 #### Solc on your machine
 =======
 
+<<<<<<< HEAD
 Now you have the compiler installed, you need to compile the contract to acquire the compiled code and Application Binary Interface.
 
+=======
+>>>>>>> origin/gh-pages
 If you installed the compiler on your machine, you need to compile the contract to acquire the compiled code and Application Binary Interface.
 
     solc -o target --bin --abi Greeter.sol
